@@ -82,7 +82,7 @@ async function getWeatherData(city) {
     dateElement.textContent = dateString;
 
   } catch (error) {
-    alert("Error fetching weather data: " + error.message);
+    alert(`Error fetching weather data: "${city}" is not a city please enter currect city name`);
   } finally {
     hideLoader();
   }
@@ -113,7 +113,7 @@ async function getForecast(city) {
       const desc = item.weather[0].description;
 
       forecastContainer.innerHTML += `
-        <div class="forcast_box border border-dark rounded-4 p-3 col-3">
+        <div class="forcast_box border border-dark rounded-4 p-3 col-lg-4">
           <h3 class="fs-6">${time12hr}</h3>
           <h1 class="fs-3">${temp}°</h1>
           <h1 class="fs-6 opacity-75">${desc}</h1>
@@ -121,7 +121,7 @@ async function getForecast(city) {
     });
 
   } catch (error) {
-    alert("Error fetching forecast data: " + error.message);
+    alert(`Error fetching weather data: "${city}" is not a city please enter currect city name`);
   } finally {
     hideLoader();
   }
