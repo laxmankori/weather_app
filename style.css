@@ -1,0 +1,50 @@
+:root {
+    --Background: #FAFAFA;
+    --Primary: #F6F6F6;
+    --Secondary: #FCC183;
+    --Button_Hover: #FF8C42;
+    --Text: #696969;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    background-color: var(--Background);
+    font-family: var(--font-primary), sans-serif;
+    margin: 0;
+    padding: 0;
+    /* color: var(--Text); */
+  }
+  
+  .label,
+  .data {
+    font-family: var(--font-secondary), sans-serif;
+  }
+  
+  .right_container {
+    background-color: var(--Primary);
+  }
+  
+  .temp h1 {
+    font-size: 20vw;
+    color: var(--Text);
+  }
+  
+  .temp h3 {
+    font-size: 5vw;
+    color: var(--Text);
+  }
+  
+  .wind_humidity span,
+  .wind_humidity i {
+    color: var(--Text);
+  }
+  
+  .forcast_box h1,
+  .forcast_box h3 {
+    color: var(--Text);
+  }
+  
+  #loader {
+  transition: opacity 0.3s ease-in-out;
+}
